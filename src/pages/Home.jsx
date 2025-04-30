@@ -1,9 +1,14 @@
+import Navbar from "../components/Navbar";
+import HomeBanner from "../components/HomeBanner";
+import Footer from "../components/Footer";
+
 function Home() {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
-    </div>
+    <>
+      <Navbar />
+      <HomeBanner />
+      <Footer />
+    </>
   );
 }
 export default Home;
