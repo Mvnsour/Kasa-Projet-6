@@ -5,14 +5,20 @@ function ApartmentPage() {
   const { id } = useParams();
   const apartment = apartmentList.find((apt) => apt.id === id);
 
-  // Si aucun appartement trouvé (mauvais id)
+  // if the apartment is not found, you can handle it here
   if (!apartment) {
     return <h2>Appartement non trouvé</h2>;
   }
 
   return (
-    <div className="apartment-page">
-      <img src={apartment.cover} alt={apartment.title} style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }} />
+    <>
+      <ul>
+        {apartment.pictures.map((picture, index) => (
+          <li key={index}>
+            <img src={picture} alt={apartment.title} />
+          </li>
+        ))}
+      </ul>
       <h1>{apartment.title}</h1>
       <p><strong>Location :</strong> {apartment.location}</p>
       <ul>
@@ -27,7 +33,7 @@ function ApartmentPage() {
           <li key={index}>{item}</li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }
 
