@@ -1,4 +1,4 @@
-import AboutBanner from "../assets/images/about-banner.png";
+import AboutBanner from '/public/assets/images/banners/about-banner.png';
 
 function About() {
   return (

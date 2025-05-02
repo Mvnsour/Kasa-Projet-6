@@ -1,4 +1,4 @@
-import darkLogoKasa from '../assets/logo/dark-logo-kasa.png';
+import darkLogoKasa from '/public/assets/logo/dark-logo-kasa.png';
 
 function Footer() {
   return (
