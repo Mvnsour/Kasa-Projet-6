@@ -1,10 +1,13 @@
 import WelcomeBanner from '/public/assets/images/banners/home-banner.png';
+import './HomeBanner.scss'
 
 function HomeBanner() {
   return (
-    <div className="container-home-banner">
-      <h1 className="banner-title">Chez vous, partout ailleurs</h1>
-      <img src={WelcomeBanner} alt="" className="home-banner" />
+    <div className="banner-container">
+      <h1 className="banner__title">
+        <span>Chez vous,</span> partout ailleurs
+      </h1>
+      <img src={WelcomeBanner} alt="" className="banner__img" />
     </div>
   );
 }
