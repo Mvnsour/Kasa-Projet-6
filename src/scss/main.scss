@@ -1,3 +1,19 @@
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  margin: 30px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
