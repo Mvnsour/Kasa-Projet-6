@@ -6,15 +6,11 @@ import aboutList from '../data/aboutList.json';
 function About() {
   return (
     <>
-      <div className="img-container">
-        <img src={AboutBanner} alt="landscape" className="about-banner"/>
-        <div className="main-collapse-container">
-        {aboutList.map(({ title, content }) => (
-          <section className="about-collapse-container" key={title}>
-            <Collapse title={title} content={content} />
-          </section> 
-        ))} 
-      </div>
+      <div className="about-container">
+        <img src={AboutBanner} alt="landscape" className="about__banner"/>
+          {aboutList.map(({ title, content }) => (
+            <Collapse key={title} title={title} content={content} /> 
+          ))} 
       </div>
     </>
   );
