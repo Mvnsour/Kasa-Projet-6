@@ -1,11 +1,11 @@
 .banner-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
   min-width: 335px;
-  margin: 0 auto;
+  margin-bottom: 30px;
   overflow: hidden;
-  
+  border-radius: 10px;
+
   .banner__title {
     position: absolute;
     top: 50%;
@@ -17,10 +17,12 @@
       weight: 700;
     }
     color: white;
-    text-align: center;
     margin: 0;
     padding: 0;
     z-index: 1;
+    span {
+      display: block;
+    }
   }
 
   .banner__img {
@@ -28,6 +30,7 @@
     height: 111px;
     object-fit: cover;
     border-radius: 10px;
-    filter: brightness(0.6);
+    filter: brightness(0.4);
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.9);
   }
 }
