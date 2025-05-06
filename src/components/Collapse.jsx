@@ -8,14 +8,16 @@ function Collapse({ title, content }) {
     setShowContent(!showContent); 
   };
   return (
-    <section className={`collapse-container${showContent ? ' expand' : ' collapsed'}`}>
+    <section 
+    className={`collapse-container${showContent ? ' expand' : ' collapsed'}`}
+    onClick={displayContent} 
+    >
       <h2 className="collapse__title"> 
         {title} 
         <span> 
           <i 
             className="fa-solid fa-chevron-up collapse__icon" 
-            style={{ color: 'white' }} 
-            onClick={displayContent} 
+            style={{ color: 'white' }}
           ></i> 
         </span> 
       </h2>
