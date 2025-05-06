@@ -1,0 +1,28 @@
+.not-found {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found__title {
+  font-size: 96px;
+  font-weight: 700;
+  color: #ff6060;
+  margin: 0;
+}
+
+.not-found__msg {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+  margin: 100px 0;
+  text-align: center;
+}
+span {
+  display: block;
+}
+
+.home-link:visited {
+  color: black;
+}
