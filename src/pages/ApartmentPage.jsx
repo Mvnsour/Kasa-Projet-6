@@ -1,38 +1,34 @@
-import { useParams } from 'react-router';
+import { useParams, Navigate } from 'react-router';
 import apartmentList from '../data/db.json';
+import Info from '../components/Info/Info';
+import Collapse from '../components/Collapse/Collapse';
+import Tags from '../components/Tags/Tags';
+import Host from '../components/Host/Host';
+import StarRating from '../components/StarRating/StarRating';
+import Slideshow from '../components/SlideShow/SlideShow';
+import './ApartmentPage.scss';
 
 function ApartmentPage() {
   const { id } = useParams();
   const apartment = apartmentList.find((apt) => apt.id === id);
 
-  // if the apartment is not found, you can handle it here
   if (!apartment) {
-    return <h2>Appartement non trouvé</h2>;
+    return <Navigate to="/error" replace />;
   }
 
   return (
     <>
-      <ul>
-        {apartment.pictures.map((picture, index) => (
-          <li key={index}>
-            <img src={picture} alt={apartment.title} />
-          </li>
-        ))}
-      </ul>
-      <h1>{apartment.title}</h1>
-      <p><strong>Location :</strong> {apartment.location}</p>
-      <ul>
-        {apartment.tags.map((tag, index) => (
-          <li key={index} className="tag">{tag}</li>
-        ))}
-      </ul>
-      <p><strong>Description :</strong> {apartment.description}</p>
-      <h3>Équipements :</h3>
-      <ul>
-        {apartment.equipments.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <Slideshow pictures={apartment.pictures} title={apartment.title}/>
+      <section className="apartment-info">
+        <Info title={apartment.title} location={apartment.location} />
+        <Tags tags={apartment.tags} />
+      </section>
+      <section className="apartment-host">
+        <Host host={apartment.host.name} picture={apartment.host.picture} />
+        <StarRating rating={apartment.rating} />
+      </section>
+      <Collapse title="Description" content={apartment.description} />
+      <Collapse title="Équipements" content={apartment.equipments} />
     </>
   );
 }
