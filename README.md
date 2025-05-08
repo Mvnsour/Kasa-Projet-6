@@ -22,5 +22,3 @@ I used React Router to configure navigation between the application's different 
 The project focused exclusively on front-end development, based on the mockups provided and using simulated data extracted from a JSON file.
 
 I started the project with Vite, a tool that simplified the initial configuration of the React application, and also used Node.js to execute JavaScript code outside the browser.
-
-Translated with DeepL.com (free version)
