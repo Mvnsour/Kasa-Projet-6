@@ -27,3 +27,12 @@
     }
   }
 }
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .footer__text {
+    font-size: 24px;
+    span {
+      display: inline;
+    }
+  }
+}
