@@ -3,7 +3,7 @@ import './HomeBanner.scss'
 
 function HomeBanner() {
   return (
-    <div className="banner-container">
+    <div className="banner">
       <h1 className="banner__title">
         <span>Chez vous,</span> partout ailleurs
       </h1>
