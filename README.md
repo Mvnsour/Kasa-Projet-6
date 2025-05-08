@@ -1,12 +1,26 @@
-# React + Vite
+# FR : Créez une application web de location immobilière avec React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dans ce projet, j'ai implémenté le front-end d'une application en utilisant React et React Router afin de créer une expérience utilisateur moderne et réactive.
 
-Currently, two official plugins are available:
+J'ai travaillé sur la logique de présentation des données et les composants React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+J'ai utilisé React Router pour configurer la navigation entre les différentes pages de l'application, ce qui m'a permis de comprendre comment gérer efficacement le routage dans une application web moderne.
 
-## Expanding the ESLint configuration
+Le projet s'est concentré exclusivement sur le développement front-end, en se basant sur les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+J'ai débuté le projet avec Vite, un outil qui a simplifié la configuration initiale de l'application React, et j'ai également utilisé Node.js pour exécuter du code JavaScript en dehors du navigateur.
+
+
+# EN : Create a real estate rental web application with React
+
+In this project, I implemented the front-end of an application using React and React Router to create a modern, responsive user experience.
+
+I worked on data presentation logic and React components, a popular JavaScript library for creating user interfaces.
+
+I used React Router to configure navigation between the application's different pages, which helped me understand how to effectively manage routing in a modern web application.
+
+The project focused exclusively on front-end development, based on the mockups provided and using simulated data extracted from a JSON file.
+
+I started the project with Vite, a tool that simplified the initial configuration of the React application, and also used Node.js to execute JavaScript code outside the browser.
+
+Translated with DeepL.com (free version)
