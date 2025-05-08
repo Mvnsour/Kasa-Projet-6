@@ -3,16 +3,16 @@ import './ApartmentCard.scss';
 
 function ApartmentCard({ apartment }) {
   return (
-    <article className="apartment-card">
-      <Link to={`/ApartmentPage/${apartment.id}`}>
+    <Link to={`/ApartmentPage/${apartment.id}`}>
+      <article className="apartment-card">
         <img 
           className="apartment-card__cover"
           src={apartment.cover}
           alt={`${apartment.title} cover`}
         />
         <span>{apartment.title}</span>
-      </Link>
-    </article>
+      </article>
+    </Link>
   );
 }
 

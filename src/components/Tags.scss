@@ -1,0 +1,17 @@
+.tags-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+  align-items: center;
+    span {
+    display: inline-block;
+    color: white;
+    background-color: #ff6060;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 5px;
+  }
+}

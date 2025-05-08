@@ -26,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: "ApartmentPage/:id",
         element: <ApartmentPage />,
+      },
+      {
+        path: "error",
+        element: <NotFound />,
       }
     ],
   }

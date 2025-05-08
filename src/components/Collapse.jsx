@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../components/Collapse.scss';
+import './Collapse.scss';
 
 function Collapse({ title, content }) { 
   const [showContent, setShowContent] = useState(false); 
@@ -8,18 +8,20 @@ function Collapse({ title, content }) {
     setShowContent(!showContent); 
   };
   return (
-    <div className={`collapse-container${showContent ? ' expand' : ' collapsed'}`}>
-      <h2 className="collapse-title"> 
+    <section 
+    className={`collapse-container${showContent ? ' expand' : ' collapsed'}`}
+    onClick={displayContent} 
+    >
+      <h2 className="collapse__title"> 
         {title} 
         <span> 
           <i 
-            className="fa-solid fa-chevron-up collapse-icon" 
-            style={{ color: 'white' }} 
-            onClick={displayContent} 
+            className="fa-solid fa-chevron-up collapse__icon" 
+            style={{ color: 'white' }}
           ></i> 
         </span> 
       </h2>
-      <div className="collapse-content"> 
+      <div className="collapse__content"> 
         {typeof content === 'string' ? ( 
           <p>{content}</p> 
         ) : ( 
@@ -30,7 +32,7 @@ function Collapse({ title, content }) {
           </ul> 
         )} 
       </div>
-    </div>
+    </section>
   )
 }
 export default Collapse;
