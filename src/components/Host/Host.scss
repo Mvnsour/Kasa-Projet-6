@@ -1,12 +1,22 @@
-.host__picture {
-  display: block;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
+.host {
+  &-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-.host__name {
-  font-size: 12px;
-  font-weight: 500;
-  color: #ff6060
+  &__picture {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff6060;
+    width: min-content;
+    text-align: end;
+  }
 }
