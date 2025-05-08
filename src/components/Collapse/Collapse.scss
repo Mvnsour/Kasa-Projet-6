@@ -11,13 +11,6 @@
     transform: rotate(180deg);
   }
 
-  &.expand .collapse__content {
-    animation: collapse 300ms forwards;
-  }
-
-  &.collapsed .collapse__content {
-    animation: collapse 300ms reverse;
-  }
 }
 
 .collapse__title {
@@ -43,10 +36,16 @@
   margin: 0;
   padding: 0 8px;
   border-radius: 0 0 5px 5px;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 
   p, ul {
     margin: 0.5rem 0;
   }
+}
+
+.collapse-container.expand .collapse__content {
+  max-height: 500px; // suffisamment grand pour ton contenu
+  padding: 8px;
 }
 
 @keyframes collapse {

@@ -7,6 +7,7 @@ function Collapse({ title, content }) {
   const displayContent = () => { 
     setShowContent(!showContent); 
   };
+  
   return (
     <section 
     className={`collapse-container${showContent ? ' expand' : ' collapsed'}`}
