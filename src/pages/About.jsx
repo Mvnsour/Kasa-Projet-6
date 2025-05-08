@@ -6,11 +6,13 @@ import aboutList from '../data/aboutList.json';
 function About() {
   return (
     <>
-      <div className="about-container">
+      <div className="about">
         <img src={AboutBanner} alt="landscape" className="about__banner"/>
+        <section className='about__collapse'>
           {aboutList.map(({ title, content }) => (
             <Collapse key={title} title={title} content={content} /> 
           ))} 
+        </section>
       </div>
     </>
   );
