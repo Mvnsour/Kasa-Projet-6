@@ -57,3 +57,9 @@
     max-height: 999px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .about__collapse {
+    margin: 0 50px;
+  }
+}
