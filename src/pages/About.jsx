@@ -1,6 +1,6 @@
 import AboutBanner from '/public/assets/images/banners/about-banner.png';
-import Collapse from '../components/Collapse';
-import '../pages/About.scss';
+import Collapse from '../components/Collapse/Collapse';
+import './About.scss';
 import aboutList from '../data/aboutList.json';
 
 function About() {

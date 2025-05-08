@@ -1,6 +1,6 @@
 import apartmentList from '../data/db.json';
-import HomeBanner from "../components/HomeBanner";
-import ApartmentCard from "../components/ApartmentCard";
+import HomeBanner from '../components/HomeBanner/HomeBanner';
+import ApartmentCard from '../components/ApartmentCard/ApartmentCard';
 import './Home.scss';
 
 function Home() {
