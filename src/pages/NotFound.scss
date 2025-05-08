@@ -29,3 +29,21 @@
     }
   }
 }
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .not-found__title {
+    font-size: 270px;
+  }
+
+  .not-found__msg { 
+  font-size: 36px;
+    span {
+      display: inline;
+    }
+  }
+
+  .home-link {
+    font-size: 18px;
+  }
+
+}
