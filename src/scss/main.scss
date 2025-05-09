@@ -13,8 +13,6 @@ nav {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -22,5 +20,13 @@ ul {
 #root {
   > :not(footer) {
     margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #root {
+    > :not(footer) {
+      margin: 0 60px;
+    }
   }
 }

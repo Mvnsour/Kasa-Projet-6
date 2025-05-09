@@ -5,3 +5,27 @@
   align-items: center;
   margin-bottom: 15px;
 }
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .apartment-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 15px 0;
+  }
+
+  .apartment-host {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 18px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+
+  .apartment-collapse {
+    display: flex;
+    gap: 100px;
+  } 
+}

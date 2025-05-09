@@ -7,14 +7,17 @@ function Home() {
   return (
     <>
       <HomeBanner />
+      <section className='apartment-container'>
         <ul className="apartment-list">
-          {apartmentList.map((apartment) => (
-            <ApartmentCard
-            key={apartment.id}
-            apartment={apartment}
-            />
-          ))}
-        </ul>
+            {apartmentList.map((apartment) => (
+              <ApartmentCard
+              key={apartment.id}
+              apartment={apartment}
+              />
+            ))}
+          </ul>
+      </section>
+
     </>
   );
 }

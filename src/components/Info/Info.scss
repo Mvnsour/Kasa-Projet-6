@@ -6,11 +6,25 @@
     font-size: 18px;
     font-weight: 500;
     margin: 0;
+    margin-bottom: 5px;
+
   }
 
   .info__location {
     font-size: 14px;
     margin: 0;
     font-weight: 500;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .info-container {
+    .info__title {
+      font-size: 30px;
+    }
+
+    .info__location {
+      font-size: 18px;
+    }
   }
 }

@@ -9,6 +9,10 @@
     font-weight: 700;
     color: #ff6060;
     margin: 0;
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 270px;
+    }
   }
 
   &__msg {
@@ -20,12 +24,24 @@
 
     span {
       display: block;
+
+      @media (min-width: 769px) and (max-width: 1440px) {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 36px;
     }
   }
 
   .home-link {
     &:visited {
       color: black;
+    }
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 18px;
     }
   }
 }

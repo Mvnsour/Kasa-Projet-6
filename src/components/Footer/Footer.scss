@@ -9,6 +9,7 @@
   &__logo {
     width: 122px;
     height: 40px;
+    margin-bottom: 15px;
   }
 
   &__text {
@@ -19,10 +20,18 @@
 
     span {
       display: block;
+
+      &:nth-of-type(1) {
+        letter-spacing: 0.5px;
+      }
     }
 
-    span:nth-of-type(1) {
-      letter-spacing: 0.5px;
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 24px;
+
+      span {
+        display: inline;
+      }
     }
   }
 }
