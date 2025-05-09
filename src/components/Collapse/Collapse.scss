@@ -1,11 +1,13 @@
+@use '../../scss/variables' as *;
+
 .collapse-container {
   position: relative;
   margin-bottom: 13px;
-  width: 100%;
+  width: $max-width;
   
   &.collapsed.collapse__icon { 
-      transform: rotate(0);
-    
+    transform: rotate(0);
+
     .collapse__content {
       max-height: 0;
       padding: 0 8px;
@@ -20,16 +22,16 @@
     .collapse__content {
       max-height: 500px;
       padding: 8px 8px 20px;
-      border-radius: 0 0 5px 5px;
+      border-radius: 0 0 $little-radius $little-radius;
     }
   }
 }
 
 .collapse__title {
   padding: 8px;
-  background-color: #ff6060;
-  color: white;
-  border-radius: 5px;
+  background-color: $color-primary;
+  color: $color-tertiary;
+  border-radius: $little-radius;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,19 +41,19 @@
 }
 
 .collapse__icon {
-  color: white;
+  color: $color-tertiary;
   transition: transform 150ms ease-in-out;
 }
 
 .collapse__content {
-  background-color: #FBFBFB;
+  background-color: $background-light;
   overflow: hidden;
   max-height: 0;
   margin-top: -5px;
   position: relative;
   z-index: -1;
   padding: 0 8px;
-  border-radius: 5px;
+  border-radius: $little-radius;
   transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
   
   p, ul {
@@ -65,22 +67,24 @@
   .about__collapse {
     margin: 0 50px;
   }
-  
+
   .collapse__title {
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: $medium-radius;
+    margin-bottom: 20px;
   }
-  
+
   .collapse__content {
     margin-top: -10px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 $medium-radius $medium-radius;
   }
-  
+
   .collapse__icon {
     padding-right: 5px;
     font-size: 24px;
   }
-  .collapse-container.expand .collapse__content{
-    border-radius: 0 0 10px 10px;
+
+  .collapse-container.expand .collapse__content {
+    border-radius: 0 0 $medium-radius $medium-radius;
   }
 }

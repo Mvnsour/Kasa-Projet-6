@@ -1,10 +1,12 @@
+@use '../scss/variables' as *;
+
 .about {
   &__banner {
-    width: 100%;
+    width: $max-width;
     height: 111px;
     margin-bottom: 15px;
     filter: brightness(0.7);
-    border-radius: 10px;
+    border-radius: $medium-radius;
     object-fit: cover;
 
     @media (min-width: 769px) and (max-width: 1440px) {
