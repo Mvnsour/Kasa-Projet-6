@@ -16,10 +16,7 @@ function Collapse({ title, content }) {
       <h2 className="collapse__title"> 
         {title} 
         <span> 
-          <i 
-            className="fa-solid fa-chevron-up collapse__icon" 
-            style={{ color: 'white' }}
-          ></i> 
+          <i className="fa-solid fa-chevron-up collapse__icon"></i> 
         </span> 
       </h2>
       <div className="collapse__content"> 
