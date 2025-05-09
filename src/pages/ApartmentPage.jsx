@@ -19,16 +19,20 @@ function ApartmentPage() {
   return (
     <>
       <Slideshow pictures={apartment.pictures} title={apartment.title}/>
-      <section className="apartment-info">
-        <Info title={apartment.title} location={apartment.location} />
-        <Tags tags={apartment.tags} />
+      <section className='apartment-content'>
+        <section className="apartment-info">
+          <Info title={apartment.title} location={apartment.location} />
+          <Tags tags={apartment.tags} />
+        </section>
+        <section className="apartment-host">
+          <Host host={apartment.host.name} picture={apartment.host.picture} />
+          <StarRating rating={apartment.rating} />
+        </section>
       </section>
-      <section className="apartment-host">
-        <Host host={apartment.host.name} picture={apartment.host.picture} />
-        <StarRating rating={apartment.rating} />
+      <section className="apartment-collapse">
+        <Collapse title="Description" content={apartment.description} />
+        <Collapse title="Équipements" content={apartment.equipments} />
       </section>
-      <Collapse title="Description" content={apartment.description} />
-      <Collapse title="Équipements" content={apartment.equipments} />
     </>
   );
 }
