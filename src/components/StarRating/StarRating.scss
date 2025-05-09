@@ -1,3 +1,10 @@
-.rating__color {
-  width: 18px;
+.rating {
+  &__color {
+    width: 18px;
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+      width: 24px;
+      padding-left: 10px;
+    }
+  }
 }
