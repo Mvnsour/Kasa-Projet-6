@@ -1,18 +1,17 @@
+@use '../../scss/variables' as *;
+
 .info-container {
   margin: 15px 0;
 
   .info__title {
-    color: #ff6060;
+    color: $color-primary;
     font-size: 18px;
     font-weight: 500;
-    margin: 0;
     margin-bottom: 5px;
-
   }
 
   .info__location {
     font-size: 14px;
-    margin: 0;
     font-weight: 500;
   }
 }

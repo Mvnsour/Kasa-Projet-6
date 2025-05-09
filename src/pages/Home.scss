@@ -1,7 +1,9 @@
+@use '../scss/variables' as *;
+
 .apartment-container {
-  width: 100%;
+  width: $max-width;
   display: flex;
-  background: #f6f6f6;
+  background: $background-light;
   justify-content: center;
 
   .apartment-list {

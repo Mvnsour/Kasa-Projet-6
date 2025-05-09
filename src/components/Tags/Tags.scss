@@ -1,3 +1,5 @@
+@use '../../scss/variables' as *;
+
 .tags-container {
   display: flex;
   gap: 15px;
@@ -8,16 +10,16 @@
   span {
     display: inline-block;
     color: white;
-    background-color: #ff6060;
+    background-color: $color-primary;
     font-size: 10px;
     font-weight: 700;
     padding: 4px 12px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: $little-radius;
 
     @media (min-width: 769px) and (max-width: 1440px) {
       font-size: 14px;
-      border-radius: 10px;
+      border-radius: $medium-radius;
       padding: 6px 24px;
     }
   }

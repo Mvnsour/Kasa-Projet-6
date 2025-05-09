@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './Collapse.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Collapse({ title, content }) { 
   const [showContent, setShowContent] = useState(false); 
@@ -16,7 +18,7 @@ function Collapse({ title, content }) {
       <h2 className="collapse__title"> 
         {title} 
         <span> 
-          <i className="fa-solid fa-chevron-up collapse__icon"></i> 
+        <FontAwesomeIcon icon={faChevronUp} className="collapse__icon" /> 
         </span> 
       </h2>
       <div className="collapse__content"> 

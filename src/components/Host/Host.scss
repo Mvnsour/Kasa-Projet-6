@@ -1,3 +1,5 @@
+@use '../../scss/variables' as *;
+
 .host {
   &-container {
     display: flex;
@@ -28,7 +30,7 @@
   &__name {
     font-size: 14px;
     font-weight: 500;
-    color: #ff6060;
+    color: $color-primary;
     width: min-content;
     text-align: end;
   }

@@ -1,3 +1,5 @@
+@use '../scss/variables' as *;
+
 .not-found {
   margin: 100px 0;
   display: flex;
@@ -7,7 +9,7 @@
   &__title {
     font-size: 96px;
     font-weight: 700;
-    color: #ff6060;
+    color: $color-primary;
     margin: 0;
 
     @media (min-width: 769px) and (max-width: 1440px) {
@@ -18,7 +20,7 @@
   &__msg {
     font-size: 18px;
     font-weight: 500;
-    color: #ff6060;
+    color: $color-primary;
     margin: 100px 0;
     text-align: center;
 
