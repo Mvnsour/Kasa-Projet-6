@@ -9,6 +9,10 @@
     font-weight: 700;
     color: #ff6060;
     margin: 0;
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 270px;
+    }
   }
 
   &__msg {
@@ -20,6 +24,14 @@
 
     span {
       display: block;
+
+      @media (min-width: 769px) and (max-width: 1440px) {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 36px;
     }
   }
 
@@ -27,23 +39,9 @@
     &:visited {
       color: black;
     }
-  }
-}
 
-@media (min-width: 769px) and (max-width: 1440px) {
-  .not-found__title {
-    font-size: 270px;
-  }
-
-  .not-found__msg { 
-  font-size: 36px;
-    span {
-      display: inline;
+    @media (min-width: 769px) and (max-width: 1440px) {
+      font-size: 18px;
     }
   }
-
-  .home-link {
-    font-size: 18px;
-  }
-
 }
