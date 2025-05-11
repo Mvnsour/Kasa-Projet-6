@@ -15,4 +15,15 @@
       margin-bottom: 30px;
     }
   }
+
+  &__collapse {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @media (min-width: 769px) and (max-width: 1440px) {
+      margin: 0 50px;
+        gap: 15px;
+      }
+  }
 }
