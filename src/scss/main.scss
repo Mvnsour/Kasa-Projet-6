@@ -17,16 +17,15 @@ ul {
   flex-wrap: wrap;
 }
 
-#root {
-  > :not(footer) {
-    margin: 0 20px;
-  }
-}
+.main {
+  max-width: 1440px;
+  margin: 0 20px;
 
-@media screen and (min-width: 769px) {
-  #root {
-    > :not(footer) {
-      margin: 0 60px;
-    }
+  @media (min-width: 769px) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: 1540px) {
+    margin: 0 auto;
   }
 }
