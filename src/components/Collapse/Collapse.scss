@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
   .collapse__title {
     font-size: 18px;
     border-radius: $medium-radius;

@@ -12,14 +12,13 @@
     gap: 30px;
   }
 
-  @media (min-width: 769px) and (max-width: 1440px) {
+  @media screen and (min-width: 769px) {
     border-radius: 25px;
 
     .apartment-list {
       justify-content: space-around;
       flex-direction: row;
       padding: 50px 0;
-      gap: 45px 1px;
     }
   }
 }

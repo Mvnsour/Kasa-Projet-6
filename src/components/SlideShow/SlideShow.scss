@@ -46,11 +46,11 @@
     display: none;
   }
 
-  @media (min-width: 769px) and (max-width: 1440px) {
+  @media screen and (min-width: 769px) {
     &__image {
       height: 415px;
       object-fit: cover;
-      border-radius: 25px; // Peut être remplacé par une variable si définie
+      border-radius: 25px;
     }
 
     &__arrow {

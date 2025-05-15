@@ -6,7 +6,7 @@
     align-items: center;
     gap: 10px;
 
-    @media (min-width: 769px) and (max-width: 1440px) {
+    @media screen and (min-width: 769px) {
       .host__name {
         font-size: 18px;
         text-align: right;

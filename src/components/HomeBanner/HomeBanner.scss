@@ -36,10 +36,10 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
   .banner__img {
     height: 223px;
-    border-radius: 25px; // Valeur spécifique non présente dans les variables, à créer si récurrente
+    border-radius: 25px; 
   }
 
   .banner__title {

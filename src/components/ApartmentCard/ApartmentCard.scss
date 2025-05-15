@@ -46,7 +46,7 @@
     font-weight: bold;
   }
 
-  @media (min-width: 769px) and (max-width: 1440px) {
+  @media screen and (min-width: 769px) {
     height: 340px;
 
     &__cover {

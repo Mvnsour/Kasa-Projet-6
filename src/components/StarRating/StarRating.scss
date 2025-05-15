@@ -2,7 +2,7 @@
   &__color {
     width: 18px;
 
-    @media (min-width: 769px) and (max-width: 1440px) {
+    @media screen and (min-width: 769px) {
       width: 24px;
       padding-left: 10px;
     }
